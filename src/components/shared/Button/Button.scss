@@ -1,0 +1,45 @@
+@import '../../../scss/variables';
+
+.btn {
+	font-family: $basicFontFamily;
+	font-size: $basicFontSize;
+	font-weight: 600;
+	line-height: 1;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	background-color: transparent;
+	transition: background-color .3s, color .3s;
+	cursor: pointer;
+
+	&--pink {
+		padding: 13px 38px;
+		color: $pink;
+		border-color: $pink;
+
+		&:hover {
+			background-color: $pink;
+			color: #fff;
+		}
+	}
+
+	&--black {
+		padding: 8px 36px;
+		color: #000;
+		border-color: #000;
+
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+
+	&:disabled {
+    cursor: not-allowed;
+    background: #f4f4f4;
+    color: #111;
+	}
+	
+	& + .btn {
+		margin-left: 20px;
+	}
+}

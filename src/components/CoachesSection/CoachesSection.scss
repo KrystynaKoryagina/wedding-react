@@ -1,0 +1,41 @@
+@import '../../scss/variables';
+
+.coaches {
+
+	&__list {
+		display: flex;
+		margin-top: 48px;
+	}
+
+	&__item {
+		flex-basis: 50%;
+		flex-shrink: 0;
+		margin-right: 15px;
+	}
+
+	&__slider-counter {
+		display: flex;
+    align-items: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__slider-num {
+		display: inline-block;
+		margin: 10px;
+	}
+
+	.slick-arrow {
+		margin: 5px;
+		font-size: 25px;
+		color: #000;
+		cursor: pointer;
+
+		&.slick-disabled {
+			opacity: .5;
+			cursor: not-allowed;
+		}
+	}
+
+}

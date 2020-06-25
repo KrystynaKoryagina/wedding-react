@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+.offer {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: calc(100% / 4);
+		padding: 40px 40px 0;
+		text-align: center;
+	}
+
+	&__icon {
+		color: $pink;
+		font-size: 70px;
+	}
+
+	&__text {
+		max-width: 187px;
+		margin: 0 auto;
+	}
+}

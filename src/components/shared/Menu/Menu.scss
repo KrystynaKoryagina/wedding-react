@@ -1,0 +1,42 @@
+@import '../../../scss/variables';
+
+.menu {
+	margin-left: auto;
+	margin-right: 35px;
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+
+		&.active {
+			font-weight: bold;
+		}
+
+		& + .menu__item {
+			margin-left: 24px;
+		}
+
+	}
+
+	&__link {		
+		font-family: Roboto,  sans-serif;
+		font-size: 14px;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 1px;
+			background: #060606;
+			transition: width .5s;
+
+		}
+		
+		&:hover::after {
+			width: 100%;
+		}
+	}
+}
