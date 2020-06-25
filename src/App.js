@@ -46,7 +46,6 @@ const App = () => {
 
 	useEffect(() => {
 		getAllSectionsData();
-		setUserAuth();
 	}, []);
 
 	useEffect(() => {
